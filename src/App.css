@@ -102,7 +102,10 @@ span.navbar-text {
 }
 .icon{
   color: #ffff;
+  font-size: 1.2rem;
+  z-index: 1;
 }
+
 .social-icon {
     display: inline-block;
     margin-left: 14px;
@@ -113,7 +116,7 @@ span.navbar-text {
     height: 42px;
     background: rgba(217, 217, 217, 0.1);
     display: inline-flex;
-    border-radius: 50%;
+    border-radius: 15%;
     margin-right: 6px;
     align-items: center;
     justify-content: center;
@@ -169,6 +172,11 @@ span.navbar-text {
 .navbar-text button:hover {
   color: #121212;
 }
+.navbar-text a:hover .icon {
+  color: #121212;
+  z-index: 4;
+}
+
 .navbar-text button:hover::before {
 	content: "";
 	width: 100%;
@@ -225,7 +233,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('');
+  background-image: url('https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
