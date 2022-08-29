@@ -50,7 +50,7 @@ const Banner = () => {
                     <p>Eu esse dolore mollit cillum incididunt ullamco in voluptate magna ex cupidatat cillum amet exercitation.</p>
                     <button onClick={() => console.log('connect')}>Let's Connect<BsArrowRightCircle /></button>
                     </Col>
-                    <Col xs={12} md={6} xl={7}>
+                    <Col xs={12} md={6} xl={5}>
                         <img src={'https://raw.githubusercontent.com/judygab/web-dev-projects/fc630d643b3cd16d77dcad71bcac7660cdd26731/personal-portfolio/src/assets/img/header-img.svg'} alt='Header image' />
                     </Col>
 
