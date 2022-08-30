@@ -54,6 +54,25 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
+@media (min-width:320px) {
+  .navbar-nav {
+    align-items: center;
+  }
+  .nav-link {
+    margin: 8px 0 8px 0;
+  }
+  .personal-logo {
+    width: 230px;
+  }
+  .social-icon {
+    flex-direction: row;
+    margin: 0;
+  }
+  .navbar-text .vvd {
+    padding: 8px 8px;
+  }
+}
+
 @media (min-width:1700px) {
 	main .container {
 		max-width: 100%;
@@ -100,9 +119,7 @@ span.navbar-text {
     display: flex;
     align-items: center;
 }
-.personal-logo {
-  
-}
+
 
 .icon{
   color: #ffff;
