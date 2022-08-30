@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-const logo = "https://raw.githubusercontent.com/judygab/web-dev-projects/fc630d643b3cd16d77dcad71bcac7660cdd26731/personal-portfolio/src/assets/img/logo.svg";
+const logo = "https://drive.google.com/uc?id=1EHgONUQ2x-F4aGfUQXQT6nBSTh8z0Evu";
 
 export default function NavBar() {
     const [activeLink, setActiveLink] = useState('home');
@@ -32,7 +32,7 @@ export default function NavBar() {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" className="personal-logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
