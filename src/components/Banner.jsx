@@ -7,7 +7,7 @@ import TrackVisibility from "react-on-screen";
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleteing] = useState(false);
-  const toRotate = ["Web Developer", "Web Desinger", "UI/UX Designer"];
+  const toRotate = ["Front-end Developer", "Fullstack Developer"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -55,7 +55,8 @@ const Banner = () => {
                 <div className={isVisible ? "animated__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>
-                    {`I'm a webdecoded `}
+                    {`I'm a Daniel `}
+                    <br />
                     <span className="wrap">{text}</span>
                 </h1>
                 <p>
@@ -73,7 +74,7 @@ const Banner = () => {
           <Col xs={12} md={6} xl={5}>
             <img
               src={
-                "https://raw.githubusercontent.com/judygab/web-dev-projects/fc630d643b3cd16d77dcad71bcac7660cdd26731/personal-portfolio/src/assets/img/header-img.svg"
+                "https://drive.google.com/uc?id=13j-xL-x77XG7X-HJrsGL_j-gVzZ0zp7o"
               }
               alt="Header image"
             />
