@@ -1,4 +1,3 @@
-import { isVisible } from "@testing-library/user-event/dist/utils";
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { BsArrowRightCircle } from "react-icons/bs";

@@ -32,27 +32,43 @@ export const Skills = () => {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={'https://raw.githubusercontent.com/judygab/web-dev-projects/fc630d643b3cd16d77dcad71bcac7660cdd26731/personal-portfolio/src/assets/img/meter1.svg'} alt="Meter 1" />
-                                <h5>Web Development</h5>
+                                <img src={'https://drive.google.com/uc?id=1q51sIxhtQpkig2ePCjsP-lH7S9SEclnX'} alt="Meter 1" />
+                                <h2>Html</h2>
                             </div>
                             <div className="item">
-                                <img src={'https://raw.githubusercontent.com/judygab/web-dev-projects/fc630d643b3cd16d77dcad71bcac7660cdd26731/personal-portfolio/src/assets/img/meter2.svg'} alt="Meter 2" />
-                                <h5>Brand Identity</h5>
+                                <img src={'https://drive.google.com/uc?id=15CeOY9KSmZpwaIx-74HjSH7eooxmUuVh'} alt="Meter 2" />
+                                <h3>Css</h3>
                             </div>
                             <div className="item">
-                                <img src={'https://raw.githubusercontent.com/judygab/web-dev-projects/fc630d643b3cd16d77dcad71bcac7660cdd26731/personal-portfolio/src/assets/img/meter3.svg'} alt="Meter 3" />
-                                <h5>Logo Design</h5>
+                                <img src={'https://drive.google.com/uc?id=19NhHZDH1tOFWOD1tYhFvaqCIlu92BOe4'} alt="Meter 3" />
+                                <h3>Javascript</h3>
                             </div>
                             <div className="item">
-                                <img src={'https://raw.githubusercontent.com/judygab/web-dev-projects/fc630d643b3cd16d77dcad71bcac7660cdd26731/personal-portfolio/src/assets/img/meter3.svg'} alt="Meter 4" />
-                                <h5>Web Development</h5>
+                                <img src={'https://drive.google.com/uc?id=1ZzsVV8awPa0apW5r3KaoJTslGdY6g36x'} alt="Meter 4" />
+                                <h3>React</h3>
+                            </div>
+                            <div className="item">
+                                <img src={'https://drive.google.com/uc?id=1FKW3w6_5g_7hHotQcTx0E2R6s0NzL-bT'} alt="Meter 4" />
+                                <h3>Bootstrap</h3>
+                            </div>
+                            <div className="item">
+                                <img src={'https://drive.google.com/uc?id=1W3ns1DHmrpU3c8Yq1pAosi1SDCE2D02K'} alt="Meter 4" />
+                                <h3>Tailwind Css</h3>
+                            </div>
+                            <div className="item">
+                                <img src={'https://drive.google.com/uc?id=1Nc60TieT_G5Lr9dTJHIQTCHcnisM17M2'} alt="Meter 4" />
+                                <h3>Firebase</h3>
+                            </div>
+                            <div className="item">
+                                <img src={'https://drive.google.com/uc?id=1mNZwptpZu6q9cTYz6zOaG0mk4CAN7iAj'} alt="Meter 4" />
+                                <h3>Wordpress</h3>
                             </div>
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={'https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/color-sharp.png'} alt=" Image Sharp" />
+        {/* <img className="background-image-left" src={'https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/color-sharp.png'} alt=" Image Sharp" /> */}
     </section>
   )
 }
