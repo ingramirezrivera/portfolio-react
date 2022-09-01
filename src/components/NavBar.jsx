@@ -30,7 +30,7 @@ export default function NavBar() {
 
     return (
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-        <Container>
+        <Container className="navbar-container">
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" className="personal-logo" />
           </Navbar.Brand>

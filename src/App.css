@@ -1,7 +1,7 @@
 /* Customs fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,500;1,700&display=swap");
 
-/************ Default Css ************/
+/************** Default Css ************/
 * {
   margin: 0;
   padding: 0;
@@ -65,8 +65,9 @@ select:focus {
 }
 
 @media (min-width: 320px) {
+  /************** Navbar Css **************/
   nav.navbar {
-    padding: 18px 0;
+    padding: 0px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -75,10 +76,13 @@ select:focus {
   }
   nav.navbar.scrolled {
     padding: 0px 0;
-    background-color: #121212;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.9s ease-in-out;
+    border-radius: 0 0 15px 15px;
+
   }
   nav.navbar a.navbar-brand {
-    width: 9%;
+    width: 75%;
   }
   nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 400;
@@ -106,7 +110,7 @@ select:focus {
     align-items: center;
   }
   .nav-link {
-    margin: 8px 0 8px 0;
+    margin: 14px 0 14px 0;
   }
   .personal-logo {
     width: 230px;
@@ -119,7 +123,7 @@ select:focus {
   .navbar-text {
     justify-content: center;
     align-items: center;
-    margin: 16px 0 8px 0;
+    margin-bottom: 16px;
   }
   .navbar-text .vvd {
     padding: 8px 8px;
@@ -159,6 +163,7 @@ select:focus {
     filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
       hue-rotate(346deg) brightness(95%) contrast(86%);
   }
+  
   .navbar-text button {
     font-weight: 700;
     color: #fff;
@@ -242,5 +247,91 @@ select:focus {
   }
   nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-color: transparent;
+  }
+  .navbar-collapse {
+    border-radius: 10px;
+    z-index: 0;
+    border-radius: 15px;
+    background: linear-gradient(90.21deg, rgba(54, 108, 170, 1) -1.91%, rgba(65, 216, 254, 1) 111.58%);
+    margin-bottom: 16px;
+
+  }
+  
+  /************** Banner Css **************/
+  .banner {
+    display: flex;
+    margin-top: 0px;
+    padding: 100px 0 30px 0;
+    background-image: url('https://drive.google.com/uc?id=10DLR30aLyc1qRGMFczOAscFdW2r2VlbO');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(90deg, rgba(54, 108, 170, 0.5) -50.91%, rgba(65, 216, 254, 0.5) 111.58%);
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+  .banner h1 {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .banner p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+  }
+  .banner button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 40px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+  }
+  .banner button svg {
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+  }
+  .banner button:hover svg {
+    margin-left: 25px;
+  }
+  .banner img {
+    border-radius: 50%;
+    width: 260px;
+  }
+  .header-img {
+    display: flex;
+    justify-content: center;
+  }
+  .header-img img {
+    margin: 60px 0 30px 0;
+  }
+  @keyframes updown {
+      0% {
+          transform: translateY(-20px);
+      }
+      50% {
+          transform: translateY(20px);
+      }
+      100% {
+          transform: translateY(-20px);
+      }
+  }
+  .txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
   }
 }
