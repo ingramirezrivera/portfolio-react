@@ -29,7 +29,7 @@ const Banner = () => {
               src={
                 "https://drive.google.com/uc?id=13j-xL-x77XG7X-HJrsGL_j-gVzZ0zp7o"
               }
-              alt="Header image"
+              alt="Daniel Ramírez image"
             />
           </Col>
         </Row>

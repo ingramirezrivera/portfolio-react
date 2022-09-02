@@ -48,7 +48,7 @@ export default function NavBar() {
                 <a href="https://www.linkedin.com/in/daniel-ramírez-rivera-1707613b" target="_blank"><FaLinkedinIn className="icon" /></a>
                 <a href="https://github.com/ingramirezrivera" target="_blank"><FaGithub className="icon"/></a>
               </div>
-              <button className="vvd"><span>Let’s Connect</span></button>
+              <button className="vvd"><span><a href="#connect">Let’s Connect</a></span></button>
             </span>
           </Navbar.Collapse>
         </Container>

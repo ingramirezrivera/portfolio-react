@@ -132,7 +132,7 @@ select:focus {
   .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: rgba(182, 23, 23, 0.1);
     display: inline-flex;
     border-radius: 15%;
     margin-right: 6px;
@@ -153,6 +153,10 @@ select:focus {
   }
   .social-icon a:hover::before {
     transform: scale(1);
+  }
+  .social-icon .icon:hover  {
+    color: #0785ac;
+
   }
   .social-icon a img {
     width: 40%;
@@ -178,19 +182,28 @@ select:focus {
   .navbar-text button span {
     z-index: 1;
   }
+  .navbar-text button span a {
+    text-decoration: none;
+    color: white;
+  }
+  .navbar-text button span a:hover {
+    color: white;
+  }
+  
   .navbar-text button::before {
     content: "";
     width: 0%;
+    border: none;
     height: 100%;
     position: absolute;
-    background-color: #fff;
+    background-color: #0785ac;
     left: 0;
     top: 0;
     z-index: -1;
     transition: 0.3s ease-in-out;
   }
   .navbar-text button:hover {
-    color: #121212;
+    color: #ffff;
   }
   .navbar-text a:hover .icon {
     color: #121212;
@@ -375,7 +388,7 @@ select:focus {
     width: 40%;
     z-index: -4;
   }
-  /***/
+  /************ Projects **************/
   .project {
     padding: 80px 0;
     position: relative;
@@ -500,5 +513,110 @@ select:focus {
     right: 0;
     z-index: -4;
   }
+  
+  /*******/
+  .contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(90.21deg, rgb(41, 82, 129) -1.91%, rgba(65, 216, 254, 1) 111.58%);
+    padding: 15px 0 60px 0;
+  }
+  .contact img {
+    width: 70%;
+  }
+  .contact h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .contact form input, .contact form textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 0 8px 0;
+    padding: 18px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+  }
+  .contact form input:focus, .contact form textarea:focus {
+    background: rgba(255, 255, 255, 1);
+    color: #121212;
+  }
+  .contact form input::placeholder, .contact form textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+    color: #121212;
+    opacity: 0.8;
+  }
+  .contact form button {
+    font-weight: 700;
+    color: #0785ac;
+    background-color: #fff;
+    padding: 14px 48px;
+    font-size: 18px;
+    margin-top: 25px;
+    border-radius: 0;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+  .contact form button span {
+    z-index: 1;
+    position: relative;
+  }
+  .contact form button:hover {
+    color: #fff;
+  }
+  .contact form button::before {
+    content: "";
+    background: #0785ac;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+  }
+  .contact form button:hover::before {
+    width: 100%;
+  }
+
+  .banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(90deg, rgba(54, 108, 170, 0.5) -50.91%, rgba(65, 216, 254, 0.5) 111.58%);
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+
+  /************ Footer Css ************/
+.footer {
+  padding: 30px 0 70px 0;
+  background-image: url('');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer img {
+  width: 100%;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
   
 }
