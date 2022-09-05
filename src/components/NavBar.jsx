@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-const logo = "https://drive.google.com/uc?id=1EHgONUQ2x-F4aGfUQXQT6nBSTh8z0Evu";
+const logo = "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fdaniel_ramirez_logo_white.svg?alt=media&token=a3d69b54-627e-4e32-a6cf-2f544cab6777";
 
 export default function NavBar() {
     const [activeLink, setActiveLink] = useState('home');
@@ -45,8 +45,8 @@ export default function NavBar() {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/daniel-ramírez-rivera-1707613b" target="_blank"><FaLinkedinIn className="icon" /></a>
-                <a href="https://github.com/ingramirezrivera" target="_blank"><FaGithub className="icon"/></a>
+                <a href="https://www.linkedin.com/in/daniel-ramírez-rivera-1707613b" target="_blank" rel="noreferrer"><FaLinkedinIn className="icon" /></a>
+                <a href="https://github.com/ingramirezrivera" target="_blank" rel="noreferrer"><FaGithub className="icon"/></a>
               </div>
               <button className="vvd"><span><a href="#connect">Let’s Connect</a></span></button>
             </span>
