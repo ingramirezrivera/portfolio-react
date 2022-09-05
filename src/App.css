@@ -79,7 +79,6 @@ select:focus {
     background-color: rgba(0, 0, 0, 0.8);
     transition: 0.9s ease-in-out;
     border-radius: 0 0 15px 15px;
-
   }
   nav.navbar a.navbar-brand {
     width: 75%;
@@ -101,6 +100,10 @@ select:focus {
     align-items: center;
   }
 
+  span.navbar-text svg:active {
+    color: green;
+  }
+
   .icon {
     color: #ffff;
     font-size: 1.2rem;
@@ -119,7 +122,7 @@ select:focus {
     flex-direction: row;
     margin: 0;
   }
-  
+
   .navbar-text {
     justify-content: center;
     align-items: center;
@@ -132,7 +135,7 @@ select:focus {
   .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: rgba(23, 105, 182, 0.1);
     display: inline-flex;
     border-radius: 15%;
     margin-right: 6px;
@@ -154,6 +157,9 @@ select:focus {
   .social-icon a:hover::before {
     transform: scale(1);
   }
+  .social-icon .icon:hover {
+    color: #0785ac;
+  }
   .social-icon a img {
     width: 40%;
     z-index: 1;
@@ -163,7 +169,7 @@ select:focus {
     filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
       hue-rotate(346deg) brightness(95%) contrast(86%);
   }
-  
+
   .navbar-text button {
     font-weight: 700;
     color: #fff;
@@ -178,22 +184,31 @@ select:focus {
   .navbar-text button span {
     z-index: 1;
   }
+  .navbar-text button span a {
+    text-decoration: none;
+    color: white;
+  }
+  .navbar-text button span a:hover {
+    color: white;
+  }
+
   .navbar-text button::before {
     content: "";
     width: 0%;
+    border: none;
     height: 100%;
     position: absolute;
-    background-color: #fff;
+    background-color: #0785ac;
     left: 0;
     top: 0;
     z-index: -1;
     transition: 0.3s ease-in-out;
   }
   .navbar-text button:hover {
-    color: #121212;
+    color: #ffff;
   }
   .navbar-text a:hover .icon {
-    color: #121212;
+    color: #0785ac;
     z-index: 4;
   }
 
@@ -252,17 +267,20 @@ select:focus {
     border-radius: 10px;
     z-index: 0;
     border-radius: 15px;
-    background: linear-gradient(90.21deg, rgba(54, 108, 170, 1) -1.91%, rgba(65, 216, 254, 1) 111.58%);
+    background: linear-gradient(
+      90.21deg,
+      rgba(54, 108, 170, 1) -1.91%,
+      rgba(65, 216, 254, 1) 111.58%
+    );
     margin-bottom: 16px;
-
   }
-  
+
   /************** Banner Css **************/
   .banner {
     display: flex;
     margin-top: 0px;
     padding: 100px 0 30px 0;
-    background-image: url('https://drive.google.com/uc?id=10DLR30aLyc1qRGMFczOAscFdW2r2VlbO');
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fbanner_background.png?alt=media&token=aa151f7c-f734-44e6-b9b7-3fb85e070903");
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -271,7 +289,11 @@ select:focus {
     font-weight: 700;
     letter-spacing: 0.8px;
     padding: 8px 10px;
-    background: linear-gradient(90deg, rgba(54, 108, 170, 0.5) -50.91%, rgba(65, 216, 254, 0.5) 111.58%);
+    background: linear-gradient(
+      90deg,
+      rgba(54, 108, 170, 0.5) -50.91%,
+      rgba(65, 216, 254, 0.5) 111.58%
+    );
     font-size: 20px;
     margin-bottom: 16px;
     display: inline-block;
@@ -285,7 +307,7 @@ select:focus {
     display: block;
   }
   .banner p {
-    color: #B8B8B8;
+    color: #b8b8b8;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -321,25 +343,37 @@ select:focus {
     margin: 40px 0 40px 0;
   }
   @keyframes updown {
-      0% {
-          transform: translateY(-20px);
-      }
-      50% {
-          transform: translateY(20px);
-      }
-      100% {
-          transform: translateY(-20px);
-      }
+    0% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
   }
   .txt-rotate > .wrap {
     border-right: 0.08em solid #666;
   }
+  .vvd span a {
+    text-decoration: none;
+    color: #ffff;
+
+  }
+  
   /************** Skills Css **************/
   .skill {
-    padding: 0 0 20px 0;
+    padding: 0 0 30px 0;
     position: relative;
-    background-image: linear-gradient(to bottom, #051937, #133660, #1d578d, #1f7abb, #12a0eb);
-    
+    background-image: linear-gradient(
+      to bottom,
+      #051937,
+      #133660,
+      #1d578d,
+      #1f7abb,
+      #12a0eb
+    );
   }
   .skill-bx {
     background: #151515;
@@ -353,11 +387,11 @@ select:focus {
     font-weight: 700;
   }
   .skill p {
-      color: #B8B8B8;
-      font-size: 16px;
-      letter-spacing: 0.8px;
-      line-height: 1.5em;
-      margin: 14px 0 18px 0;
+    color: #b8b8b8;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 18px 0;
   }
   .skill-slider {
     width: 100%;
@@ -365,7 +399,7 @@ select:focus {
     position: relative;
   }
   .skill-slider .item img {
-    width: 80%;
+    width: 60%;
     margin: 0 auto 15px auto;
   }
   .background-image-left {
@@ -375,5 +409,301 @@ select:focus {
     width: 40%;
     z-index: -4;
   }
+  /************ Projects **************/
+  .project {
+    padding: 80px 0;
+    position: relative;
+    background-color: black;
+  }
+  .project h2 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .project p {
+    color: #b8b8b8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px auto 30px auto;
+    text-align: center;
+    width: 56%;
+  }
+  .project .nav.nav-pills {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: rgb(255 255 255 / 10%);
+    overflow: hidden;
+  }
+  .project .nav.nav-pills .nav-item {
+    width: 33.33333%;
+  }
+  .project .nav.nav-pills .nav-link {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 17px 0;
+    color: #fff;
+    width: 100%;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    z-index: 0;
+  }
+  .project .nav.nav-pills .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(
+      90.21deg,
+      rgba(54, 108, 170, 1) -1.91%,
+      rgba(65, 216, 254, 1) 111.58%
+    );
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
+  .project .nav.nav-pills .nav-link.active::before {
+    width: 100% !important;
+  }
+  .project .nav.nav-pills .nav-link.active {
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+  .nav-link#projects-tabs-tab-first {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 55px 0px 0px 55px;
+  }
+  .nav-link#projects-tabs-tab-second {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .nav-link#projects-tabs-tab-third {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0 55px 55px 0;
+  }
+  .proj-imgbx {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  .proj-imgbx::before {
+    content: "";
+    background: linear-gradient(
+      90.21deg,
+      rgb(41, 82, 129) -1.91%,
+      rgba(65, 216, 254, 1) 111.58%
+    );
+    opacity: 0.85;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    transition: 0.4s ease-in-out;
+  }
+  .proj-imgbx:hover::before {
+    height: 100%;
+  }
+  .proj-txtx {
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    width: 100%;
+  }
+  .proj-imgbx:hover .proj-txtx {
+    top: 50%;
+    opacity: 1;
+  }
+  .proj-txtx h4 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1.1em;
+  }
+  .proj-txtx span {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+  }
+  .background-image-right {
+    top: 20%;
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+    right: 0;
+    z-index: -4;
+  }
+
+  /*******/
+  .contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(
+      90.21deg,
+      rgb(41, 82, 129) -1.91%,
+      rgba(65, 216, 254, 1) 111.58%
+    );
+    padding: 15px 0 40px 0;
+  }
+  .contact img {
+    width: 70%;
+  }
+  .contact h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin-bottom: 8px;
+    padding: 18px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+  }
+  .contact form input:focus,
+  .contact form textarea:focus {
+    background: rgba(255, 255, 255, 1);
+    color: #121212;
+  }
+  .contact form input::placeholder,
+  .contact form textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .contact form input:focus::placeholder,
+  .contact form textarea:focus::placeholder {
+    color: #121212;
+    opacity: 0.8;
+  }
+  .contact form button {
+    font-weight: 700;
+    color: #0785ac;
+    background-color: #fff;
+    padding: 14px 48px;
+    font-size: 18px;
+    margin-top: 25px;
+    border-radius: 0;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+  .contact form button span {
+    z-index: 1;
+    position: relative;
+  }
+  .contact form button:hover {
+    color: #fff;
+  }
+  .contact form button::before {
+    content: "";
+    background: #0785ac;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+  }
+  .contact form button:hover::before {
+    width: 100%;
+  }
+
+  .banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(
+      90deg,
+      rgba(54, 108, 170, 0.5) -50.91%,
+      rgba(65, 216, 254, 0.5) 111.58%
+    );
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+
+  /************ Footer Css ************/
+  .footer {
+    padding: 30px 0 40px 0;
+    background-image: url("");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .footer img {
+    width: 100%;
+  }
+  .footer p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #b8b8b8;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+  }
+
+}
+
+@media (min-width:765px) {
+  /******* Navbar *******/
+  .navbar-collapse {
+    background: transparent;
+  }
+  .social-icon a {
+    width: 32px;
+    height: 32px;
+  }
+  .navbar-collapse {
+    margin: 10px 0 10px 0;
+  }
+  .navbar-text {
+    margin-bottom: 0px;
+  }
+  /******* Banner *******/
+  .banner {
+    padding: 120px 0 80px 0;
+  }
+  /******* Contact *******/
+  .contact {
+    padding: 30px 0 30px 0; 
+  }
+
+}
+
+@media (min-width:1024px) {
+  .personal-logo {
+    width: 382px;
+  }
+  .social-icon {
+    flex-direction: row;
+    margin: 0;
+    width: 155px;
+  }
+  .navbar-text .vvd {
+    padding: 8px 16px 8px 16px;
+  }
   
+  .social-icon a {
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+  } 
 }
