@@ -69,15 +69,15 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={'https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fgithub_logo.png?alt=media&token=0112454b-9404-45b5-bd7d-f768ce62a918'} alt="Github Logo" />
-                                <h3>Git</h3>
+                                <h3>Github</h3>
                             </div>
                             <div className="item">
                                 <img src={'https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fgitlab_logo%20.png?alt=media&token=22fbc1cf-c9ce-4370-8c6b-9dce2909087b'} alt="Gitlab Logo" />
-                                <h3>Git</h3>
+                                <h3>Gitlab</h3>
                             </div>
                             <div className="item">
                                 <img src={'https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fpwa_logo.png?alt=media&token=e05e450f-16d7-420c-8748-0eb9999af280'} alt="Pwa Logo" />
-                                <h3>Git</h3>
+                                <h3>Pwa</h3>
                             </div>
                             
                         </Carousel>
