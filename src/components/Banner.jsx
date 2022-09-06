@@ -20,7 +20,7 @@ const Banner = () => {
                 Hi! I'm a web development enthusiast. My passion is to study
                 environmental technologies and apply them to the projects I work
                 on. I like to work as a team to do great things and enjoy the
-                process.
+                process...
               </p>
               <button className="vvd">
                 <span>
