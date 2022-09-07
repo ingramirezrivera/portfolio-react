@@ -9,36 +9,28 @@ export const Projects = () => {
       description: "Made with WordPress",
       imgUrl:
         "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fcanalua_web.png?alt=media&token=91fcecea-a1a9-404f-a31a-33081f36cd7e",
+      url: "https://canalua.com"
     },
     {
       title: "Vintila House Cat E-commerce",
       description: "Made with WordPress",
       imgUrl:
         "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fvintila_web.png?alt=media&token=dd0b2548-ac00-446f-826b-59b17e01b3a8",
+        url: "https://vintilahousecat.com"
     },
     {
       title: "Glamping Natural Sound",
       description: "Made with Wordpress ",
       imgUrl:
         "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fglamping_web.png?alt=media&token=d23aa44c-6d2b-4e7d-bc29-0f0f50533593",
+        url: "https://glampingnaturalsound.com"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Sofka U",
+      description: "Made with Html, Css and javascript Vanilla",
       imgUrl:
-        "https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/project-img1.png",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl:
-        "https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/project-img2.png",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl:
-        "https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/project-img3.png",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2FSofkachallege_web.png?alt=media&token=4b55138c-74d0-434f-bce2-8903aa895cca",
+      url: "https://ingramirezrivera.github.io/SofkaU-Challenge/"
     },
   ];
 
@@ -58,22 +50,7 @@ export const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="section">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque quam, quod neque provident velit, rem explicabo
-                    excepturi id illo molestiae blanditiis, eligendi dicta
-                    officiis asperiores delectus quasi inventore debitis quo.
-                  </p>
-                </Tab.Pane>
-                <Tab.Pane eventKey="third">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque quam, quod neque provident velit, rem explicabo
-                    excepturi id illo molestiae blanditiis, eligendi dicta
-                    officiis asperiores delectus quasi inventore debitis quo.
-                  </p>
-                </Tab.Pane>
+                
               </Tab.Content>
             </Tab.Container>
           </Col>
