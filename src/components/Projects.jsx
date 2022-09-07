@@ -5,22 +5,22 @@ import "animate.css";
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Canalúa E-commerce",
+      description: "Made with WordPress",
       imgUrl:
-        "https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/project-img1.png",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fcanalua_web.png?alt=media&token=91fcecea-a1a9-404f-a31a-33081f36cd7e",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Vintila House Cat E-commerce",
+      description: "Made with WordPress",
       imgUrl:
-        "https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/project-img2.png",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fvintila_web.png?alt=media&token=dd0b2548-ac00-446f-826b-59b17e01b3a8",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Glamping Natural Sound",
+      description: "Made with Wordpress ",
       imgUrl:
-        "https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/project-img3.png",
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fglamping_web.png?alt=media&token=d23aa44c-6d2b-4e7d-bc29-0f0f50533593",
     },
     {
       title: "Business Startup",

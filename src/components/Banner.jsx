@@ -12,7 +12,7 @@ const Banner = () => {
             <div>
               <span className="tagline">Welcome to my Portfolio</span>
               <h1>
-                {`I'm a Daniel `}
+                {`I'm Daniel `}
                 <br />
                 <span className="wrap">Front-end Developer</span>
               </h1>
