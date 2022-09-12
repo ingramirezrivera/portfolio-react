@@ -367,7 +367,7 @@ select:focus {
   button.button-download  {
     font-size: 24px;
     margin: 0 0 40px 25px;
-    padding: 8px 12px;
+    padding: 8px 18px;
     border-radius: 24px;
     background-color: #666;
 
@@ -554,7 +554,7 @@ select:focus {
     z-index: -4;
   }
 
-  /*******/
+  /******** Contact *********/
   .contact {
     display: flex;
     flex-direction: column;
@@ -564,10 +564,10 @@ select:focus {
       rgb(41, 82, 129) -1.91%,
       rgba(65, 216, 254, 1) 111.58%
     );
-    padding: 15px 0 40px 0;
+    padding: 40px 8px 40px 8px;
   }
   .contact img {
-    width: 70%;
+    width: 50%;
   }
   .contact h2 {
     font-size: 45px;
@@ -696,6 +696,9 @@ select:focus {
   .contact {
     padding: 30px 0 30px 0; 
   }
+  .contact img {
+    width: 70%;
+  }
 
 }
 
@@ -717,4 +720,7 @@ select:focus {
     height: 48px;
     margin-right: 16px;
   } 
+  .contact img {
+    width: 60%;
+  }
 }
