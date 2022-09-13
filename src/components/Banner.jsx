@@ -39,7 +39,7 @@ const Banner = () => {
               alt="Daniel Ramírez"
             />
             <span>
-              <button className="button-download"> Download CV <BsDownload /></button>
+              <button className="button-download"><a href="https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2FPDF%2FDaniel_Ramirez_Rivera_CV.pdf?alt=media&token=8794527f-9090-4543-aa53-9bdb03367231" download="Daniel Ramirez CV" target='blank'>Download CV <BsDownload /></a> </button>
             </span>
           </Col>
         </Row>
