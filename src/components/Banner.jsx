@@ -31,7 +31,7 @@ const Banner = () => {
               </button>
             </div>
           </Col>
-          <Col xs={12} md={6} xl={5} className="header-img d-flex justify-content-center flex-column">
+          <Col xs={12} md={6} xl={5} className="header-img">
             <img
               src={
                 "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fperfil_daniel_ramirez_rivera.png?alt=media&token=ea66b280-97a1-4e5d-ac2b-0791118d771f"

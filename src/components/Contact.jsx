@@ -3,6 +3,7 @@ import 'animate.css';
 import { useState } from "react";
 import { db } from "../firebase";
 import { collection, addDoc } from "firebase/firestore"; 
+import emailjs from '@emailjs/browser';
 
 
 export const Contact = () => {
@@ -23,6 +24,16 @@ export const Contact = () => {
     })
   }
 
+  const sendEmail = () => {
+    emailjs.sendForm('gmail', 'template_u7v890f', formDetails, 'jhXK3ckua3dHqO5Zx')
+      .then((result) => {
+          console.log(result.text);
+          console.log(formDetails);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("submitted");
@@ -35,7 +46,9 @@ export const Contact = () => {
         message: formDetails.message,
       });
       console.log("Document written with ID: ", docRef.id);
+      sendEmail();
       alert('Thanks! The Message has been submitted.');
+      setFormDetails(formInitialDetails);
     } catch (e) {
       console.error("Error adding document: ", e);
     }
