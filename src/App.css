@@ -337,10 +337,11 @@ select:focus {
   }
   .header-img {
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
   .header-img img {
-    margin: 40px 0 40px 0;
+    margin: 40px 20px;
   }
   @keyframes updown {
     0% {
