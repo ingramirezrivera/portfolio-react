@@ -341,7 +341,7 @@ select:focus {
     justify-content: center;
   }
   .header-img img {
-    margin: 40px 20px;
+    margin: 40px auto;
   }
   @keyframes updown {
     0% {
