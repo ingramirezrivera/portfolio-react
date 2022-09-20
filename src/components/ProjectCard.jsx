@@ -13,7 +13,7 @@ export const ProjectCard = ({ title, description, imgUrl, url }) => {
           <br />
           <button className="vvd">
                 <span>
-                  <a href={url} target="_blank" rel="noreferrer">
+                  <a href={url} target="_blank" rel="noreferrer" className="visit-link">
                     Visit now <BsArrowRightCircle />
                   </a>
                 </span>

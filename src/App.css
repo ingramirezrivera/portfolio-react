@@ -131,6 +131,10 @@ select:focus {
   .navbar-text .vvd {
     padding: 8px 8px;
   }
+  .visit-link {
+    margin-top: 24pxpx;
+    font-size: 24px;
+  }
 
   .social-icon a {
     width: 42px;

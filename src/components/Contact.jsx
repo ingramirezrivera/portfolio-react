@@ -49,6 +49,7 @@ export const Contact = () => {
       setStatus({ succes: true, message: 'Message sent successfully'});
     } catch (e) {
       console.error("Error adding document: ", e);
+      setButtonText("Something went wrong...");
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
     }
   }
@@ -89,7 +90,7 @@ export const Contact = () => {
                     </Col>
                     <Col size={12} sm={6} md={12} className="px-1">
                       <textarea name="message" rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}{buttonText === "Sending..." ? <Spinner animation="grow" variant="light" size="sm" /> : "" }</span></button>
+                      <button type="submit"><span>{buttonText === "Sending..." ? <Spinner animation="grow" variant="info" size="sm" /> : "" }{buttonText}</span></button>
                     </Col>
                     {
                       status.message &&
