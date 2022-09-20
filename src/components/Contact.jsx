@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import Spinner from 'react-bootstrap/Spinner';
 import 'animate.css';
 import { useState, useRef } from "react";
 import { db } from "../firebase";
@@ -18,6 +19,9 @@ export const Contact = () => {
   }
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
+  const [buttonText, setButtonText] = useState('Send');
+  const [status, setStatus] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -28,6 +32,7 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setButtonText("Sending...");
     console.log("submitted");
     try {
       const docRef = await addDoc(collection(db, "contacts"), {
@@ -37,12 +42,14 @@ export const Contact = () => {
         phone: formDetails.phone,
         message: formDetails.message,
       });
+      setButtonText("Send");
       console.log("Document written with ID: ", docRef.id);
       sendEmail(e);
-      alert('Thanks! The Message has been submitted.');
       setFormDetails(formInitialDetails);
+      setStatus({ succes: true, message: 'Message sent successfully'});
     } catch (e) {
       console.error("Error adding document: ", e);
+      setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
     }
   }
 
@@ -82,8 +89,14 @@ export const Contact = () => {
                     </Col>
                     <Col size={12} sm={6} md={12} className="px-1">
                       <textarea name="message" rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>Submit</span></button>
+                      <button type="submit"><span>{buttonText}{buttonText === "Sending..." ? <Spinner animation="grow" variant="light" size="sm" /> : "" }</span></button>
                     </Col>
+                    {
+                      status.message &&
+                      <Col>
+                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+                      </Col>
+                    }
                     
                   </Row>
                 </form> 
