@@ -82,7 +82,7 @@ export const Projects = () => {
       url: "https://ingramirezrivera.github.io/QR-code-component/",
     },
     {
-      title: "Ping-single-column-coming-soon-page.png",
+      title: "Ping single column coming soon page",
       description: "Made with Html, Css & Javascript",
       imgUrl:
         "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2FPing-single-column-coming-soon-page.png?alt=media&token=88dd0e9f-ad0e-488d-b895-1241f7a2bef9",
