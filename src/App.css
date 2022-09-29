@@ -458,12 +458,12 @@ select:focus {
     margin: 0 auto;
     border-radius: 50px;
     background-color: rgb(255 255 255 / 10%);
-    overflow: hidden;
   }
   .project .nav.nav-pills .nav-item {
     width: 33.33333%;
   }
   .project .nav.nav-pills .nav-link {
+    overflow: hidden;
     background-color: transparent;
     border-radius: 0;
     padding: 17px 0;
