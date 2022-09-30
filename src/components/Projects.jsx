@@ -88,6 +88,13 @@ export const Projects = () => {
         "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2FPing-single-column-coming-soon-page.png?alt=media&token=88dd0e9f-ad0e-488d-b895-1241f7a2bef9",
       url: "https://ingramirezrivera.github.io/Ping-single-column-coming-soon-page/",
     },
+    {
+      title: "Intro-component-with-signup-form",
+      description: "Made with Html, Css & Javascript",
+      imgUrl:
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2FIntro-component-with-signup-form.png?alt=media&token=4beb9d9c-60fe-4379-bdde-1790107ba760",
+      url: "https://ingramirezrivera.github.io/Intro-component-with-signup-form/",
+    },
   ];
   const projectsWordpress = [
     {
