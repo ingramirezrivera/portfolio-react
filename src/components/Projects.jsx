@@ -103,6 +103,23 @@ export const Projects = () => {
       url: "https://ingramirezrivera.github.io/Base-Apparel-coming-soon-page/",
     },
   ];
+  const projectsReact = [
+    {
+      title: "Parallax Efect React",
+      description: "Made with React",
+      imgUrl:
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fparallax-react.png?alt=media&token=8636fc04-d97d-40e3-8bba-0964724a6bd6",
+      url: "https://ingramirezrivera.github.io/parallax-react/",
+    },
+    {
+      title: "Navbar Tutorial React",
+      description: "Made with React",
+      imgUrl:
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fnavbar-tutorial-react.png?alt=media&token=cd0017c3-0da6-49d4-a422-0778d4857e7c",
+      url: "https://ingramirezrivera.github.io/navbar-tutorial-react/",
+    },
+  ];
+
   const projectsWordpress = [
     {
       title: "Canalúa E-commerce",
@@ -166,7 +183,11 @@ export const Projects = () => {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                  <p>Section under construction...</p>
+                  <Row>
+                    {projectsReact.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
                   <Row>
