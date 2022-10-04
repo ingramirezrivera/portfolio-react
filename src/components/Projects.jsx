@@ -95,6 +95,13 @@ export const Projects = () => {
         "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2FIntro-component-with-signup-form.png?alt=media&token=4beb9d9c-60fe-4379-bdde-1790107ba760",
       url: "https://ingramirezrivera.github.io/Intro-component-with-signup-form/",
     },
+    {
+      title: "Base Apparel coming soon page",
+      description: "Made with Html, Css & Javascript",
+      imgUrl:
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fbaseapparel.png?alt=media&token=50c3cad7-e35c-4086-a9bc-ebb2b886ddcc",
+      url: "https://ingramirezrivera.github.io/Base-Apparel-coming-soon-page/",
+    },
   ];
   const projectsWordpress = [
     {
