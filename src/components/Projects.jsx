@@ -118,6 +118,13 @@ export const Projects = () => {
         "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fnavbar-tutorial-react.png?alt=media&token=cd0017c3-0da6-49d4-a422-0778d4857e7c",
       url: "https://ingramirezrivera.github.io/navbar-tutorial-react/",
     },
+    {
+      title: "Execute Financial",
+      description: "Made with React",
+      imgUrl:
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2FExecute-financial.png?alt=media&token=e07ab563-27c2-464d-965a-46dc1afc3286",
+      url: "https://ingramirezrivera.github.io/Execute-financial/",
+    },
   ];
 
   const projectsWordpress = [
