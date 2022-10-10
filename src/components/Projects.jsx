@@ -125,6 +125,13 @@ export const Projects = () => {
         "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2FExecute-financial.png?alt=media&token=e07ab563-27c2-464d-965a-46dc1afc3286",
       url: "https://ingramirezrivera.github.io/Execute-financial/",
     },
+    {
+      title: "Momentum Clone",
+      description: "Made with React",
+      imgUrl:
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fmomentum-clone.png?alt=media&token=4af1bdcc-7a5d-4525-a9cb-fe8d07181ffd",
+      url: "https://ingramirezrivera.github.io/momentum-clone/",
+    },
   ];
 
   const projectsWordpress = [
