@@ -112,11 +112,11 @@ export const Projects = () => {
       url: "https://ingramirezrivera.github.io/parallax-react/",
     },
     {
-      title: "Navbar Tutorial React",
+      title: "Aptive React",
       description: "Made with React",
       imgUrl:
         "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fnavbar-tutorial-react.png?alt=media&token=cd0017c3-0da6-49d4-a422-0778d4857e7c",
-      url: "https://ingramirezrivera.github.io/navbar-tutorial-react/",
+      url: "https://ingramirezrivera.github.io/aptive-react/",
     },
     {
       title: "Execute Financial",
