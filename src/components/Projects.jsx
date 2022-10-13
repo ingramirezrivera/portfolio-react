@@ -132,6 +132,13 @@ export const Projects = () => {
         "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fmomentum-clone.png?alt=media&token=4af1bdcc-7a5d-4525-a9cb-fe8d07181ffd",
       url: "https://ingramirezrivera.github.io/momentum-clone/",
     },
+    {
+      title: "Galaxy Travel",
+      description: "Made with React",
+      imgUrl:
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fgalaxy-travel.png?alt=media&token=52f1e29b-8422-4a4b-a744-68c5fc1c043e",
+      url: "https://ingramirezrivera.github.io/galaxy-travel/",
+    },
   ];
 
   const projectsWordpress = [
