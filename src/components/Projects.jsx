@@ -139,6 +139,13 @@ export const Projects = () => {
         "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fgalaxy-travel.png?alt=media&token=52f1e29b-8422-4a4b-a744-68c5fc1c043e",
       url: "https://ingramirezrivera.github.io/galaxy-travel/",
     },
+    {
+      title: "Defi",
+      description: "Made with React",
+      imgUrl:
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2FDefi.png?alt=media&token=2e963e45-c4ce-413c-97e0-b21769aa32f8",
+      url: "https://ingramirezrivera.github.io/Cripto-API/",
+    },
   ];
 
   const projectsWordpress = [
