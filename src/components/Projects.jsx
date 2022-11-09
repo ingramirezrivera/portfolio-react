@@ -102,6 +102,7 @@ export const Projects = () => {
         "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fbaseapparel.png?alt=media&token=50c3cad7-e35c-4086-a9bc-ebb2b886ddcc",
       url: "https://ingramirezrivera.github.io/Base-Apparel-coming-soon-page/",
     },
+    
   ];
   const projectsReact = [
     {
@@ -145,6 +146,13 @@ export const Projects = () => {
       imgUrl:
         "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2FDefi.png?alt=media&token=2e963e45-c4ce-413c-97e0-b21769aa32f8",
       url: "https://ingramirezrivera.github.io/Cripto-API/",
+    },
+    {
+      title: "Dark-theme",
+      description: "Made with React",
+      imgUrl:
+        "https://firebasestorage.googleapis.com/v0/b/portfolio-react-6a0ea.appspot.com/o/assets%2Fimages%2Fdark-theme.png?alt=media&token=2b9c5843-2458-4e8c-8595-308464b149d4",
+      url: "https://ingramirezrivera.github.io/dark-theme/",
     },
   ];
 
